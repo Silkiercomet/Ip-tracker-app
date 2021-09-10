@@ -1,0 +1,98 @@
+@import url('https://fonts.googleapis.com/css2?family=Rubik:wght@400;500;600&display=swap');
+
+:root{
+    --VeryDarkGray: hsl(0, 0%, 17%);
+    --DarkGray: hsl(0, 0%, 59%);
+}
+
+html{
+    box-sizing: border-box;
+}
+*,*::after,*::before{
+    padding: 0;
+    margin: 0;
+    box-sizing: inherit;
+
+}
+body{
+    font-family: 'Rubik', sans-serif;
+}
+
+header{
+    display: grid;
+    place-items: center;
+    background-image: url(images/pattern-bg.png);
+    height: 40vh;
+    background-repeat: no-repeat;
+    background-size: cover;
+    overflow: visible;
+    position: relative;
+    z-index: 2;
+}
+h1{
+    color: white;
+    padding: 1rem 0;
+}
+.input-container{
+    position: relative;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 1rem 0;
+}
+#ip{
+    height: 2.5rem;
+    width: 80%;
+    padding: 1rem;
+    border-radius: .6rem;
+    border: none;
+    /* width: 18.875rem; */
+}
+#ip:focus{
+    outline: none;
+}
+.btn-input{
+    position: absolute;
+    right: 9.8%;
+    height: 2.5rem;
+    padding: 0 1rem;
+    border: none;
+    background-color: black;
+    border-bottom-right-radius:.6rem ;
+    border-top-right-radius: .6rem;
+    cursor: pointer;
+}
+
+.info-container{
+    list-style: none;
+    width: 80%;
+    color: var(--VeryDarkGray);
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-radius: .6rem;
+    overflow: visible;
+    padding: 1rem 0;
+}
+.info-container li{
+    padding: 0.5rem 0;
+    text-align: center;
+    overflow-wrap: break-word;
+}
+span{
+    color: var(--DarkGray);
+    text-transform: uppercase;
+    font-weight: 700;
+    font-size: 0.7rem;
+    letter-spacing: .2rem;
+}
+
+#mapid{
+    height: 100vh;
+    width: 100%;
+    position: relative;
+    z-index: 1;
+}

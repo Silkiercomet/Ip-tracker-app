@@ -12,7 +12,8 @@
    integrity="sha512-XQoYMqMTK8LvdxXYG3nZ448hOEQiglfqkJs1NOQV44cWnUrBc8PkAOcXy20w0vlaXaVUearIOBhiXZ5V3ynxwA=="
    crossorigin=""></script>
   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
-  
+
+  <link rel="stylesheet" href="style.css">
   <title>Frontend Mentor | IP Address Tracker</title>
 
   <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
@@ -27,26 +28,26 @@
         <h1>IP Address Tracker</h1>
         <div class="input-container">
           <input type="text" name="ip" id="ip" placeholder="Search for any IP address or domain">
-          <button aria-label="arrow btn"><i>
+          <button value="getter" aria-label="arrow btn" class="btn-input"><i>
             <svg xmlns="http://www.w3.org/2000/svg" width="11" height="14"><path fill="none" stroke="#FFF" stroke-width="3" d="M2 1l6 6-6 6"/></svg>
           </i></button>
         </div>
         <ul class="info-container">
           <li>
-            <h2>IP Address</h2>
-            <em id="ip"></em>
+            <span>IP Address</span>
+            <h2 id="ip-getter">192.212.174.101</h2>
           </li>
           <li>
-            <h2>Location</h2>
-            <em id="location"></em>
+            <span>Location</span>
+            <h2 id="location">Brooklyn, NY 10001</h2>
           </li>
           <li>
-            <h2>Timezone</h2>
-            <em id="timezone"></em>
+            <span>Timezone</span>
+            <h2 id="timezone">UTC-05:00</h2>
           </li>
           <li>
-            <h2>ISP</h2>
-            <em id="isf"></em>
+            <span>ISP</span>
+            <h2 id="isf">SpaceX Starlink</h2>
           </li>
         </ul>
       </header>
@@ -55,15 +56,10 @@
 
     </main>
   
-
-  
-
-  
-  
-   
      <!--  UTC add offset value dynamically using the API -->
-  
-  
+      
+     <script src="map__api.js"></script>
+     <script src="main.js"></script>
   <div class="attribution">
     Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
     Coded by <a href="#">Your Name Here</a>.

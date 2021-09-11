@@ -2,7 +2,7 @@
 
 :root{
     --VeryDarkGray: hsl(0, 0%, 17%);
-    --DarkGray: hsl(0, 0%, 59%);
+    --DarkGray: hsla(0, 0%, 59%, 0.356);
 }
 
 html{
@@ -47,6 +47,7 @@ h1{
     padding: 1rem;
     border-radius: .6rem;
     border: none;
+    position: relative;
     /* width: 18.875rem; */
 }
 #ip:focus{
@@ -95,4 +96,35 @@ span{
     width: 100%;
     position: relative;
     z-index: 1;
+}
+@media (min-width:920px){
+    header{
+
+        height: 35vh;
+
+    }
+    #ip{
+        max-width: 40%;
+    }
+    .btn-input{
+        right: 30%;
+    }
+    .info-container{
+        flex-direction: row;
+        justify-content: space-around;
+        margin-bottom: -3rem;
+    }
+    .info-container li:not(li:last-child){
+        padding: 0.5rem 1rem;
+        text-align: start;
+        border-right: 1px solid var(--DarkGray);
+    }
+    .info-container li{
+        flex: 1;
+    }
+    #mapid{
+        height: 85vh;
+    }
+
+
 }
